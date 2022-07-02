@@ -5,16 +5,36 @@ import About from "./Components/About/about";
 import Events from "./Components/Events/events";
 import Team from "./Components/Team/team";
 import Profile from "./Components/Profile/profile";
+import { BrowserRouter as Router, useRoutes} from "react-router-dom";
+
+const Container = () => {
+  let routes = useRoutes([
+    { path: "/", element: 
+    <div>
+      <Navbar />
+      <Home /> 
+      <About />
+      <Events />
+      <Team />
+    </div>
+    },
+    { path: "profile", element: <Profile /> },
+  ]);
+  return routes;
+};
 
 const SiteContainer = () => {
   return (
     <div>
-        <Navbar />
+        <Router>
+          <Container />
+        </Router>
+        {/* <Navbar />
         <Home />
         <About />
         <Events />
         <Team />
-        <Profile />
+        <Profile /> */}
     </div>
   );
 };
