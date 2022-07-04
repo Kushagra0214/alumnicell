@@ -16,19 +16,22 @@ export default function Navbar(){
                 </div>
                 <div className="navbar-profile right-content">
                         <img src="img/profile_pic.png" alt="profile pic"></img>
-                        <p>My Profile</p>
+                        <div>
+                            <p class="navbar-name"><strong>FULL NAME</strong></p>
+                            <p class="navbar-degree">DEGREE YEAR</p>
+                        </div>
                 </div>
             </div>
             <div className="lower-navbar">
                 <div className="navbar-list">
-                    <a href="/">ABOUT</a>
-                    <a href="/">EVENTS</a>
-                    <a href="/">NEWSLETTER</a>
-                    <a href="/">TEAM</a>
-                    <a href="/">SHARE</a>
+                    <a href="/"><strong>ABOUT</strong></a>
+                    <a href="/"><strong>EVENTS</strong></a>
+                    <a href="/"><strong>NEWSLETTER</strong></a>
+                    <a href="/"><strong>TEAM</strong></a>
+                    <a href="/"><strong>SHARE</strong></a>
                 </div>
                 <div className="navbar-button">
-                    <a href="/">SIGN IN</a>
+                    <a href="/"><strong>SIGN IN</strong></a>
                 </div>
             </div>
         </div>
