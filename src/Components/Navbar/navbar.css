@@ -1,0 +1,86 @@
+.upper-navbar{
+    background-color: #3880F5;
+    display: inline-flex;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+}
+
+.left-content{
+    padding: 1% 0% 1% 5%;
+    display: inline-flex;
+    align-items: center;
+    width: 50%;
+}
+
+.right-content{
+    display: inline-flex;
+    align-items: center;
+    width: 150px;
+}
+
+.logo-navbar{
+    margin-left: 20px;
+}
+
+.logo-navbar img{
+    height: 100px;
+    left: 0px;
+}
+
+.institute-name{
+    margin: 0% 2%;
+    width: auto;
+    font-size: 18px;
+}
+
+.navbar-profile{
+    background-color: #f4f6f8;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 80px;
+    margin-left: auto;
+    margin-right: 5%;
+    color: black;
+}
+
+.navbar-profile img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.navbar-profile p{
+    font-size: 18px;
+}
+
+.lower-navbar{
+    background-color: #f4f6f8;
+    /* padding: 1% 5%; */
+    text-align: left;
+}
+
+.navbar-list{
+    padding: 1% 5%;
+    display: inline-flex;
+    width: 60%;
+    text-align: left;
+}
+
+.navbar-list a, .navbar-button a{
+    /* margin: 0 7%; */
+    margin: 0 auto;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-button{
+    padding: 1% 5%;
+    margin-right: 6%;
+    float: right;
+    right: 0%;
+    height: 100%;
+    text-decoration: none;
+    background-color:cornflowerblue;
+}
