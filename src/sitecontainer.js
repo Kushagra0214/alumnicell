@@ -18,7 +18,12 @@ const Container = () => {
       <Team />
     </div>
     },
-    { path: "profile", element: <Profile /> },
+    { path: "profile", element:
+    <>
+     <Navbar />
+     <Profile /> 
+    </>
+    },
   ]);
   return routes;
 };
