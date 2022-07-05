@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  .profile{
+      text-align: center;
+      font-size: clamp(.3rem, .3rem + 1vw, 1rem)
+  
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    font-size: clamp(.3rem, .3rem + 1vw, 1rem)
+  }
+  .details div{
+      display: flex;
+      justify-content: space-between;
+      white-space: nowrap;
+    overflow: hidden;
+  }
+  .details input{
+      width: 80%;
+      margin-right: 3vw;
+  }
+  .details button{
+      position: absolute;
+      right: 7%;
+      font-size: clamp(.3rem, .1rem + 1vw, .8rem)
+  
+  }
+  .profile_img img {
+      width: 90%;
+    max-height: 200px;
+    clip-path: circle(30%);
+  }
+  
