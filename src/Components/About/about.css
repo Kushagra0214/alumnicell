@@ -38,3 +38,33 @@
     border-radius: 100%;
     margin: 10px;
 }
+
+@media screen and (max-width: 850px) {
+    .about-para{
+        max-width: 35%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about-para{
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-para{
+        max-width: 100%;
+    }
+
+    .about-styling-dots{
+        position: relative;
+        float: none;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .about-styling-dots .single-dot{
+        height: 20px;
+        width: 20px;
+    }
+}
