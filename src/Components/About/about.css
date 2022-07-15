@@ -49,6 +49,24 @@
     .about-para{
         max-width: 40%;
     }
+
+    .about-heading{
+        font-size: 35px;
+    }
+
+    .about-subheading{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .about-heading{
+        font-size: 30px;
+    }
+
+    .about-subheading{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -58,13 +76,45 @@
 
     .about-styling-dots{
         position: relative;
+        bottom: 0;
+        right: 0; 
         float: none;
-        display: inline-flex;
         align-items: center;
+        text-align: center;
     }
 
     .about-styling-dots .single-dot{
+        display: inline-flex;
         height: 20px;
         width: 20px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .about-styling-dots .single-dot{
+        height: 16px;
+        width: 16px;
+        margin: 7px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .about-heading{
+        font-size: 27px;
+    }
+
+    .about-subheading{
+        font-size: 18px;
+    }
+
+    .about-para{
+        font-size: 15px;
+    }
+
+    .about-styling-dots .single-dot{
+        height: 13px;
+        width: 13px;
+        margin: 6px;
+    }
+}
+
