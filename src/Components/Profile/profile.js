@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./profile.css";
 
 export default function Profile() {
+
+  const [info, setInfo] = useState(true)
+
   return (
     <>
       <div className="container">
@@ -16,29 +19,32 @@ export default function Profile() {
           </div>
         </div>
         <div className="details">
-          <div>Details</div>
           <div>
-            <label htmlFor="">Name</label>
-            <input type="text" />
-        </div>
+          <div style={{fontWeight: "bolder"}}>Details</div> <br />
+          <button onClick={() => setInfo(true)} >Edit Profile</button>
+          </div>
+          <div>
+            <label htmlFor="">Name</label><br />
+            <input type="text" disabled = {info ? false : true} spellCheck="false"/>
+        </div><br />
         <div>
-            <label htmlFor="">Degree</label>
-            <input type="text" />
-        </div>
+            <label htmlFor="">Degree</label> <br />
+            <input type="text" disabled = {info ? false : true} spellCheck="false"/>
+        </div><br />
         <div>
-            <label htmlFor="">Email</label>
-            <input type="text" />
-        </div>
+            <label htmlFor="">Email</label><br />
+            <input type="text" disabled = {info ? false : true} spellCheck="false"/>
+        </div><br />
         <div>
-            <label htmlFor="">Contact Number</label>
-            <input type="text" />
-        </div>
+            <label htmlFor="">Contact Number</label><br />
+            <input id="contact" type="text" disabled = {info ? false : true} spellCheck="false"/>
+        </div><br />
         <div>
-            <label htmlFor="">About User</label>
-            <input type="text" />
-        </div>
+            <label htmlFor="">About User</label><br />
+            <input type="text" disabled = {info ? false : true} spellCheck="false"/>
+        </div><br />
         <div>
-            <button>SAVE PROFILE</button>
+            <button id="save" onClick={() => setInfo(false)} >Save Profile</button>
         </div>
             
   

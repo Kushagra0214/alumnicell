@@ -1,4 +1,5 @@
 .container {
+  margin-top: 3vh;
     display: flex;
     justify-content: center;
   }
@@ -34,5 +35,85 @@
       width: 90%;
     max-height: 200px;
     clip-path: circle(30%);
+  }
+
+  @media screen and (max-width: 1300px) {
+
+    .profile {
+      font-size: 18px;
+    }
+
+    .details div {
+      display: block;
+      font-size: 18px;
+    }
+
+    .details {
+      text-align: left;
+      font-size: 18px;
+    }
+
+    .details input {
+      height: 3vh;
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .profile {
+      font-size: 16px;
+    }
+    .details input {
+      height: 2vh;
+      font-size: 16px;
+    }
+    .details button {
+      position: relative;
+      margin-left: 58%;
+      height: 3.5vh;
+      width: 20vw;
+      font-size: 14px;
+    }
+
+    #save {
+      margin-top: 1vh;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .details button {
+      margin-left: 55%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .container {
+      display: block;
+    }
+    
+    .details {
+      text-align: center;
+      margin-right: 0;
+      margin-left: 15vw;
+    }
+
+    .profile {
+      font-size: 15px;
+    }
+
+    .details button {
+      position: relative;
+      margin-left: 10%;
+      height: 4.5vh;
+      width: 30vw;
+      font-size: 15px;
+      margin-bottom: 1vh;
+    }
+
+    #save {
+      width: 35vw;
+      margin-top: 1vh;
+    }
   }
   
