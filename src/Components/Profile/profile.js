@@ -3,7 +3,7 @@ import "./profile.css";
 
 export default function Profile() {
 
-  const [info, setInfo] = useState(true)
+  const [info, setInfo] = useState(false)
 
   return (
     <>
@@ -20,7 +20,7 @@ export default function Profile() {
         <div className="details">
           <div>
           <div style={{fontWeight: "bolder", fontSize: '21px', marginBottom: '2vh'}}>DETAILS</div> <br />
-          <button onClick={() => setInfo(true)} >Edit Profile</button>
+          {!info && <button onClick={() => setInfo(true)} >Edit Profile</button>}
           </div>
           <div>
             <label htmlFor="">NAME</label><br />
@@ -43,7 +43,7 @@ export default function Profile() {
             <input type="text" disabled = {info ? false : true} spellCheck="false"/>
         </div><br />
         <div>
-            <button id="save" onClick={() => setInfo(false)} >Save Profile</button>
+            {info && <button id="save" onClick={() => setInfo(false)} >Save Profile</button>}
         </div>
         </div>
       </div>
