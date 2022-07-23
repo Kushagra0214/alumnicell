@@ -10,7 +10,7 @@ import { BrowserRouter as Router, useRoutes} from "react-router-dom";
 const Container = () => {
   let routes = useRoutes([
     { path: "/", element: 
-    <div>
+    <div >
       <Navbar />
       <Home /> 
       <About />

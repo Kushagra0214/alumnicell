@@ -1,0 +1,15 @@
+.home-background{
+    background-image: url(../../../public/img/venue.png);
+    height: 100vh;
+    opacity: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+
+.width-fi{
+    display: flex;
+    width: 50%;
+}

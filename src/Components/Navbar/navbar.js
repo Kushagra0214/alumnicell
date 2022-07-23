@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar(){
     return (
@@ -11,9 +11,8 @@ export default function Navbar(){
                         <img src="img/logo.png" alt="IIT GOA LOGO"></img>
                     </div>
                     <div className="institute-name">
-                        <h2>Indian Institute of Technology Goa</h2>
+                        Indian Institute of Technology Goa | Alumni
                     </div>
-                    <div className="alumni-heading"><h2>Alumni</h2></div>
                 </div>
                 <div className="navbar-profile right-content">
                         <img src="img/profile_pic.png" alt="profile pic"></img>
@@ -25,11 +24,11 @@ export default function Navbar(){
             </div>
             <div className="lower-navbar">
                 <div className="navbar-list">
-                    <a href="/"><strong>ABOUT</strong></a>
-                    <a href="/"><strong>EVENTS</strong></a>
-                    <a href="/"><strong>NEWSLETTER</strong></a>
-                    <a href="/"><strong>TEAM</strong></a>
-                    <a href="/"><strong>SHARE</strong></a>
+                    <div className="nav-list-item"><a href="/"><strong>ABOUT</strong></a></div>
+                    <div className="nav-list-item"><a href="/"><strong>EVENTS</strong></a></div>
+                    <div className="nav-list-item"><a href="/"><strong>NEWSLETTER</strong></a></div>
+                    <div className="nav-list-item"><a href="/"><strong>TEAM</strong></a></div>
+                    <div className="nav-list-item"><a href="/"><strong>SHARE</strong></a></div>
                 </div>
                 <div className="navbar-button">
                     <a href="/"><strong>SIGN IN</strong></a>

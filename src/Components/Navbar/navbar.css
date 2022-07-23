@@ -3,8 +3,11 @@
 .navbar{
     z-index: 1;
     font-family: 'Lato', sans-serif;
-    /* position: fixed;
-    width: 100%; */
+    position: fixed;
+    /*width: 100%; */
+    padding: 0;
+    top: 0;
+  width: 100%;
 }
 
 .upper-navbar{
@@ -19,13 +22,11 @@
     padding: 1% 0% 1% 5%;
     display: inline-flex;
     align-items: center;
-    width: 50%;
 }
 
 .right-content{
     display: inline-flex;
     align-items: center;
-    width: auto;
 }
 
 .logo-navbar{
@@ -38,16 +39,10 @@
 }
 
 .institute-name{
-    padding: 0% 2%;
+    margin-left: 2%;
     width: auto;
-    font-size: 18px;
+    font-size: 1.5rem;
     height: auto;
-    border-right: solid #fff;
-    border-right-width: 5px;
-}
-
-.institute-name h2{
-    margin: 0;
 }
 
 .alumni-heading{
@@ -89,14 +84,21 @@
 .lower-navbar{
     background-color: #b2dde7;
     /* padding: 1% 5%; */
+    width: 100%;
     text-align: left;
 }
 
 .navbar-list{
-    padding: 1% 6.5%;
+    padding: 1% 0;
     display: inline-flex;
     width: 60%;
     text-align: left;
+}
+
+.nav-list-item{
+    margin-left: 0;
+    text-align: center;
+    width: 16rem;
 }
 
 .navbar-list a, .navbar-button a{
