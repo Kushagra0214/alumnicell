@@ -172,6 +172,10 @@
         margin-left: 80px;
         font-size: 13px;
     }
+
+    .login-form {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 330px) {

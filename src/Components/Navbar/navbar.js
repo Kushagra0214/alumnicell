@@ -50,7 +50,7 @@ export default function Navbar(){
                     <a href="/"><strong>SHARE</strong></a>
                 </div>
                 <div className="navbar-button">
-                    <a href="/"><strong>SIGN IN</strong></a>
+                    <a href="/login"><strong>SIGN IN</strong></a>
                 </div>
             </div>
         </div>

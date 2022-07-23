@@ -1,0 +1,144 @@
+.login-mobile{
+    background-color: #99d2df;
+    padding-top: 230px;
+    height: auto;
+    width: 100vw;
+}
+
+.login-mobile img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    filter: brightness(40%);
+}
+
+.login-mobile input {
+    width: 300px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16.5px;
+}
+
+.login-button-mobile{
+    font-size: 17px;
+    background-color: #008eb0;
+    width: 340px;
+    margin: 15px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 850px) {
+    .login-mobile{
+        padding-top: 160px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .login-mobile{
+        padding-top: 130px;
+    }
+    .login-button-mobile{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .login-mobile{
+        padding-top: 150px;
+    }
+    .login-mobile img{
+        width: 250px;
+        height: 250px;
+    }
+    .login-mobile input{
+        width: 250px;
+        font-size: 15px;
+    }
+    .login-button-mobile{
+        width: 290px;
+        font-size: 15.5px;
+        margin-bottom: 85px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .login-mobile img{
+        width: 200px;
+        height: 200px;
+    }
+    .login-mobile input{
+        width: 200px;
+    }
+    .login-button-mobile{
+        width: 240px;
+        margin-bottom: 132px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .login-mobile img{
+        width: 160px;
+        height: 160px;
+    }
+    .login-mobile input{
+        width: 160px;
+        font-size: 13px;
+    }
+    .login-button-mobile{
+        font-size: 13px;
+        width: 200px;
+        margin-bottom: 181px;
+    }
+}
+
+@media screen and (max-width: 235px) {
+    .login-mobile {
+        padding-top: 200px;
+    }
+    .login-mobile img{
+        width: 130px;
+        height: 130px;
+    }
+    .login-mobile input{
+        width: 130px;
+        font-size: 11px;
+        margin: 5px;
+    }
+    .login-button-mobile{
+        font-size: 11px;
+        width: 170px;
+        margin: 5px;
+        margin-bottom: 200px;
+        
+    }
+}
+
+@media screen and (max-width: 191px) {
+    .login-mobile {
+        padding-top: 200px;
+        height: 69.5vh;
+    }
+    .login-mobile img{
+        width: 70vw;
+        height: 70vw;
+    }
+    .login-mobile input{
+        padding: 8px 12px;
+        width: 70%;
+        font-size: 9px;
+        margin: 5px;
+    }
+    .login-button-mobile{
+        font-size: 9px;
+        width: 85%;
+        margin: 5px;
+        margin-bottom: 240px;
+    }
+}
