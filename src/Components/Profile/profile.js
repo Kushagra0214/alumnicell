@@ -6,6 +6,7 @@ export default function Profile() {
   const [info, setInfo] = useState(true)
 
   return (
+    <>
       <div className="container">
         <div className="profile">
           <div style={{fontSize: '30px', fontWeight: 'bold', color: '#237AB3'}}>MY PROFILE</div>
@@ -46,5 +47,6 @@ export default function Profile() {
         </div>
         </div>
       </div>
+      </>
   );
 }
