@@ -6,50 +6,45 @@ export default function Profile() {
   const [info, setInfo] = useState(true)
 
   return (
-    <>
       <div className="container">
         <div className="profile">
-          <div>MY PROFILE</div>
+          <div style={{fontSize: '30px', fontWeight: 'bold', color: '#237AB3'}}>MY PROFILE</div>
           <div className="profile_img">
             <img src="https://c4.wallpaperflare.com/wallpaper/221/266/392/rihanna-face-hair-wind-wallpaper-preview.jpg" alt="" />
           </div>
-          <div>
-            Name of student
-            <p>Degree Year</p>
+          <div style={{fontWeight: "600", fontSize: '20px'}}>
+            Name of User <br /> <span style={{fontWeight: "initial", fontSize: '17px'}}>Degree Year</span>
           </div>
         </div>
         <div className="details">
           <div>
-          <div style={{fontWeight: "bolder"}}>Details</div> <br />
+          <div style={{fontWeight: "bolder", fontSize: '21px', marginBottom: '2vh'}}>DETAILS</div> <br />
           <button onClick={() => setInfo(true)} >Edit Profile</button>
           </div>
           <div>
-            <label htmlFor="">Name</label><br />
+            <label htmlFor="">NAME</label><br />
             <input type="text" disabled = {info ? false : true} spellCheck="false"/>
         </div><br />
         <div>
-            <label htmlFor="">Degree</label> <br />
+            <label htmlFor="">DEGREE</label> <br />
             <input type="text" disabled = {info ? false : true} spellCheck="false"/>
         </div><br />
         <div>
-            <label htmlFor="">Email</label><br />
+            <label htmlFor="">EMAIL</label><br />
             <input type="text" disabled = {info ? false : true} spellCheck="false"/>
         </div><br />
         <div>
-            <label htmlFor="">Contact Number</label><br />
+            <label htmlFor="">CONTACT NUMBER</label><br />
             <input id="contact" type="text" disabled = {info ? false : true} spellCheck="false"/>
         </div><br />
         <div>
-            <label htmlFor="">About User</label><br />
+            <label htmlFor="">ABOUT USER</label><br />
             <input type="text" disabled = {info ? false : true} spellCheck="false"/>
         </div><br />
         <div>
             <button id="save" onClick={() => setInfo(false)} >Save Profile</button>
         </div>
-            
-  
         </div>
       </div>
-    </>
   );
 }
