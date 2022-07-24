@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'react-router-dom'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar(){
@@ -42,16 +43,18 @@ export default function Navbar(){
                         </div>
                 </div>
                 <div className="navbar-list">
-                    <a href="/"><strong>HOME</strong></a>
-                    <a href="/"><strong>ABOUT</strong></a>
-                    <a href="/"><strong>EVENTS</strong></a>
+                    <a href="/#home"><strong>HOME</strong></a>
+                    <a href="/#about"><strong>ABOUT</strong></a>
+                    <a href="/event"><strong>EVENTS</strong></a>
                     <a href="/"><strong>NEWSLETTER</strong></a>
-                    <a href="/"><strong>TEAM</strong></a>
+                    <a href="/#team"><strong>TEAM</strong></a>
                     <a href="/"><strong>SHARE</strong></a>
                 </div>
-                <div className="navbar-button">
-                    <a href="/login"><strong>SIGN IN</strong></a>
-                </div>
+                <Link to="/login">
+                    <div className="navbar-button">
+                        <a href="/login"><strong>SIGN IN</strong></a>
+                    </div>
+                </Link>
             </div>
         </div>
     )
