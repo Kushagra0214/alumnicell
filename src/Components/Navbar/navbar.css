@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar{
     z-index: 1;
+    position: fixed;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     position: fixed;
     /*width: 100%; */
@@ -22,6 +28,8 @@
     padding: 1% 0% 1% 5%;
     display: inline-flex;
     align-items: center;
+    font-size: 18px;
+    max-width: 70%;
 }
 
 .right-content{
@@ -39,15 +47,22 @@
 }
 
 .institute-name{
-    margin-left: 2%;
-    width: auto;
-    font-size: 1.5rem;
-    height: auto;
+    padding: 0% 2%;
+    display: flex;
+    /* width: auto;
+    height: auto; */
+    border-right: solid #fff;
+    border-right-width: 5px;
+}
+
+.institute-name h2{
+    display: flex;
+    width:max-content;
+    margin: 0;
 }
 
 .alumni-heading{
     padding: 0% 2%;
-    font-size: 18px;
 }
 
 .navbar-profile{
@@ -58,6 +73,10 @@
     margin-left: auto;
     margin-right: 5%;
     color: black;
+}
+
+.menu-icon, .menu-profile{
+    display: none;
 }
 
 .navbar-profile img{
@@ -95,10 +114,8 @@
     text-align: left;
 }
 
-.nav-list-item{
-    margin-left: 0;
-    text-align: center;
-    width: 16rem;
+.lower-navbar .close-icon{
+    display: none;
 }
 
 .navbar-list a, .navbar-button a{
@@ -123,4 +140,308 @@
 
 .navbar-button a{
     color: #fff;
+}
+@media screen and (max-width: 1016px){
+    .left-content{
+        font-size: 15px;
+    }
+    .logo-navbar img{
+        height: 80px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 835px){
+    .left-content{
+        font-size: 13px;
+    }
+    .logo-navbar img{
+        height: 70px;
+        left: 0px;
+    }
+     .institute-name{
+        border-right-width: 3px;
+    }
+}
+
+
+/* 
+/* 
+@media screen and (max-width: 755px){
+    /* .left-content{
+        font-size: 16px;
+    } */
+
+    /* .institute-name{
+        border-right-width: 3px;
+    } */
+/*}*/
+
+/* @media screen and (max-width: 693px){
+    .logo-navbar img{
+        height: 80px;
+        left: 0px;
+    } */
+    /* .left-content{
+        font-size: 13px;
+    } */
+/* } */
+
+@media screen and (max-width: 730px){
+
+    .logo-navbar{
+        margin: 0;
+    }
+
+    @keyframes slider {
+        0%{
+            opacity: 0;
+            margin-right: -400px;
+        }
+        100%{
+            opacity: 1;
+            margin-right: 0px;
+        }
+    }
+
+    .navbar-profile{
+        display: none;
+    }
+
+    .menu-profile{
+        display: inline-flex!important;
+        border: solid #008EB0 2px;
+        padding: 15px;
+        margin: 50px auto 15px auto;
+    }
+
+    .menu-profile p{
+        font-size: 17px;
+    }
+
+    .navbar-name, .navbar-degree{
+        color: #008EB0;
+    }
+
+    .menu-profile div{
+        margin: auto;
+    }
+
+    .lower-navbar{
+        display:none;
+        padding: 20px;
+        margin-right: -400px;
+    }
+
+    .lower-navbar.active{
+        display: block;
+        text-align: center; 
+        width: 360px;
+        float: right;
+        position: absolute;
+        right: 0;
+        z-index: 1;  
+        background-color: #99d2df;
+        font-size: 20px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        opacity: 1;
+        animation: slider 0.7s 1 ease-out;
+        animation-delay: -0.1s;
+        margin-right: 0px;
+    }
+
+    .lower-navbar.active .navbar-profile{
+        display: contents;
+        background: none;
+    }
+
+    .lower-navbar.active .navbar-list{
+        /* position: absolute;
+        left: 0; */
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .lower-navbar.active .navbar-list a{
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .left-content{
+        width: 65%;
+    }
+
+    .navbar-button{
+        float: none;
+        background:none;
+        margin: 50px 0px 0px;
+    }
+
+    .navbar-button a{
+        background-color:#008EB0;
+        border-radius: 40px;
+        padding: 20px;
+        /* border: solid #008EB0 5px; */
+    }
+
+    .lower-navbar .close-icon{
+        display: contents;
+    }
+
+    .close-icon .xmark{
+        float: right;
+        width: 7%;
+        height: auto;
+        color: #008EB0;
+    }
+
+    .menu-icon{
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: 5%;
+        background: none;
+        border: none;
+        width: 40px;
+    }
+
+    .font-awesome{
+        color: #b2dde7;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 628px){
+    .left-content{
+       width: 60%;
+    }
+
+    .institute-name h2{
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 553px){
+    .left-content{
+       font-size: 11px;
+    }
+
+    .logo-navbar img{
+        height: 60px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .left-content{
+       font-size: 10px;
+       width: 64%;
+    }
+}
+
+@media screen and (max-width: 416px){
+    .upper-navbar{
+        padding: 2% 0% 2% 0%;
+    }
+    .left-content{
+       font-size: 8px;
+       width: 60%;
+    }
+    .logo-navbar img{
+        height: 50px;
+        left: 0px;
+    }
+
+    .menu-icon{
+        width: 35px;
+        height: auto;
+    }
+
+    .lower-navbar{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 385px){
+    .lower-navbar.active{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 365px){
+    .lower-navbar.active{
+        width: 300px;
+    }
+    .left-content{
+       width: 67%;
+    }
+}
+
+@media screen and (max-width: 324px){
+    .left-content{
+       width: 70%;
+    }
+
+    .logo-navbar img{
+        height: 45px;
+        left: 0px;
+    }
+
+    .lower-navbar a{
+        font-size: 17px;
+    }
+
+    .lower-navbar.active{
+        width: 260px;
+    }
+
+    .menu-profile{
+        padding: 10px;
+        margin: 50px auto 15px auto;
+    }
+
+    .navbar-profile p{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 274px){
+    .lower-navbar.active{
+        width: 230px;
+    }
+
+    .left-content{
+       font-size: 6px;
+    }
+
+    .logo-navbar img{
+        height: 40px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 255px){
+    .lower-navbar a{
+        font-size: 15px;
+    }
+
+    .lower-navbar.active{
+        width: 200px;
+    }
+
+    .menu-profile{
+        padding: 7px;
+        margin: 50px auto 15px auto;
+    }
+
+    .navbar-profile p{
+        font-size: 10px;
+    }
+
 }
