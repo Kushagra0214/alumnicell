@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./team.css";
-import 'bootstrap/dist/css/bootstrap.css';
 import Card from "./Card";
 
 export default function Team(){
