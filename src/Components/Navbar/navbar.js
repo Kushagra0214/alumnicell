@@ -20,8 +20,9 @@ export default function Navbar(){
                         <img src="img/logo.png" alt="IIT GOA LOGO"></img>
                     </div>
                     <div className="institute-name">
-                        Indian Institute of Technology Goa | Alumni
+                        <h2>Indian Institute of Technology Goa</h2>
                     </div>
+                    <div className="alumni-heading"><h2>Alumni</h2></div>
                 </div>
                 <div className="navbar-profile right-content">
                         <img src="img/profile_pic.png" alt="profile pic"></img>
