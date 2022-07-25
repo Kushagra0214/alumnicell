@@ -9,11 +9,8 @@ html {
     position: fixed;
     width: 100%;
     font-family: 'Lato', sans-serif;
-    position: fixed;
-    /*width: 100%; */
-    padding: 0;
-    top: 0;
-  width: 100%;
+    /* position: fixed;
+    width: 100%; */
 }
 
 .upper-navbar{
@@ -35,6 +32,7 @@ html {
 .right-content{
     display: inline-flex;
     align-items: center;
+    width: auto;
 }
 
 .logo-navbar{
@@ -103,12 +101,11 @@ html {
 .lower-navbar{
     background-color: #b2dde7;
     /* padding: 1% 5%; */
-    width: 100%;
     text-align: left;
 }
 
 .navbar-list{
-    padding: 1% 0;
+    padding: 1% 6.5%;
     display: inline-flex;
     width: 60%;
     text-align: left;

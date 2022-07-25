@@ -137,7 +137,7 @@ export default function Team(){
         },
     ]);
 
-    console.log("Hi bri");
+    console.log("Started again...");
     const el=useRef();
 
     const happen = ()=>{
@@ -165,7 +165,7 @@ export default function Team(){
                 <div className="hi-next">
                 <FontAwesomeIcon className="font-awesome" color="#008eb0" icon={faChevronRight} size="xl"/>
                 </div>
-                <ul onClick={happen}>
+                <ul>
                     <li>
                         <Card id={0} members={members}/>
                         {/* <img src="https://images.pexels.com/photos/2562992/pexels-photo-2562992.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> */}
