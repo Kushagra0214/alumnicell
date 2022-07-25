@@ -33,7 +33,7 @@ const Container = () => {
      <Login /> 
     </>
     },
-    { path: "event", element:
+    { path: "/events/:path", element:
     <>
      <Navbar />
      <EventDesc /> 
