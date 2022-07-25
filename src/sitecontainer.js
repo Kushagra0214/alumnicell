@@ -4,7 +4,6 @@ import Home from "./Components/Home/home";
 import About from "./Components/About/about";
 import Events from "./Components/Events/events";
 import EventDesc from "./Components/Events/event_description";
-
 import Team from "./Components/Team/team";
 import Profile from "./Components/Profile/profile";
 import Login from "./Components/Login_mobile/login";
