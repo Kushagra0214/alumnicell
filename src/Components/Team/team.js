@@ -113,7 +113,6 @@ export default function Team(){
                     <li><img src="https://images.pexels.com/photos/11324524/pexels-photo-11324524.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" /></li>
                     <li><img src="https://images.pexels.com/photos/11324524/pexels-photo-11324524.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" /></li>
                     <li><img src="https://images.pexels.com/photos/11324524/pexels-photo-11324524.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" /></li>
-
                 </ul>
             </div>
         </div>

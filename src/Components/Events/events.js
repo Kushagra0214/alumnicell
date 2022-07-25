@@ -1,8 +1,17 @@
-import React from "react";
-import "./events.css";
+import React from 'react'
+import "./events.css"
+import Slider from './Slider/Slider'
 
-export default function Events(){
-    return (
-        <h1 id="events">Events</h1>
-    )
+export default function events() {
+  return (
+    <div className='events' id='events'>
+      <h1 className="events-heading">EVENTS</h1>
+
+      <div className="caraousel">
+        <Slider/>
+      </div>
+    </div>
+
+    
+  )
 }
