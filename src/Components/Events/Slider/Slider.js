@@ -61,7 +61,7 @@ export default function Slider() {
             <img src={item.image} alt="image1"></img>
             <Link to={{
               pathname: "/events/" + item.title,
-              state: item,
+              hash: item.id.toString(),
             }}>
             <div className="text">
               <span>{item.title}</span>
