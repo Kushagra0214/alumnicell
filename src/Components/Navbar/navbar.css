@@ -33,6 +33,7 @@ html {
     display: inline-flex;
     align-items: center;
     width: auto;
+    text-decoration: none;
 }
 
 .logo-navbar{
@@ -200,7 +201,7 @@ html {
             margin-right: 0px;
         }
     }
-
+    
     .navbar-profile{
         display: none;
     }
@@ -210,6 +211,7 @@ html {
         border: solid #008EB0 2px;
         padding: 15px;
         margin: 50px auto 15px auto;
+        text-decoration: none;
     }
 
     .menu-profile p{
