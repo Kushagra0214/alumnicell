@@ -16,12 +16,12 @@ export default function Team(){
             imgsrc: 'srcfile',
         },
         {
-            name: 'Prashant',
+            name: 'Sanskar',
             description: 'Hey guys',
             imgsrc: 'srcfile',
         },
         {
-            name: 'Sanskar',
+            name: 'Prashant',
             description: 'Namaste',
             imgsrc: 'srcfile',
         },
