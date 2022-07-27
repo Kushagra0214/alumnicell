@@ -10,13 +10,18 @@ export default function Navbar(){
     const handleClick = () => {
         setClicked(!isClicked);
     }
+    const [clicked, setClick] = useState(false);
+    const clickHandler = () => {
+        console.log(clicked)
+        setClick(!clicked);
+    }
 
     return (
         <div className="navbar">
             <div className="upper-navbar">
                 <div className="left-content">
                     <div className="logo-navbar">
-                        <img src="/img/logo.png" alt="IIT GOA LOGO"></img>
+                        <img src="/img/logo2.png" alt="IIT GOA LOGO"></img>
                     </div>
                     <div className="institute-name">
                         <h2>Indian Institute of Technology Goa</h2>
@@ -37,7 +42,10 @@ export default function Navbar(){
             <div className={isClicked ? "active lower-navbar" : "lower-navbar"}>
                 <div className="close-icon" onClick={handleClick}><FontAwesomeIcon className='xmark' icon={faXmark}/></div>
                 <div>
-                    <Link className="navbar-profile menu-profile" to="/profile">
+                    <Link className="navbar-profile menu-profile" to="/" onClick={(e) => {
+                        e.preventDefault();
+                        clickHandler();
+                    }}>
                         <img src="/img/profile_pic.png" alt="profile pic"></img>
                         <div>
                             <p className="navbar-name"><strong>Full Name of user</strong></p>
@@ -49,15 +57,25 @@ export default function Navbar(){
                     <a href="/#home"><strong>HOME</strong></a>
                     <a href="/#about"><strong>ABOUT</strong></a>
                     <a href="/#events"><strong>EVENTS</strong></a>
-                    <a href="/" title="COMING SOON"><strong>NEWSLETTER</strong></a>
+                    <a href="/" title="COMING SOON" onClick={(e) => {
+                        e.preventDefault();
+                        clickHandler();
+                    }}><strong>NEWSLETTER</strong></a>
                     <a href="/#team"><strong>TEAM</strong></a>
-                    <a href="/" title="COMING SOON"><strong>SHARE</strong></a>
+                    <a href="#share" title="COMING SOON" onClick={(e) => {
+                        e.preventDefault();
+                        clickHandler();
+                    }}><strong>SHARE</strong></a>
                 </div>
                 <Link to="/login">
                     <div className="navbar-button">
-                        <a href="/login"><strong>SIGN IN</strong></a>
+                        <a href="/login" title="COMING SOON"><strong>SIGN IN</strong></a>
                     </div>
                 </Link>
+            </div>
+            <div className={clicked? "coming-soon coming-soon-active" : "coming-soon"}>
+                <div className="close-icon" onClick={clickHandler}><FontAwesomeIcon className='xmark' icon={faXmark}/></div>
+                <h1>COMING SOON</h1>
             </div>
         </div>
     )

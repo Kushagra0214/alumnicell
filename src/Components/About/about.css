@@ -22,6 +22,9 @@
     margin-right: 3%;
     display: inline-flex;
     word-break: break-all;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
 }
 
 .about-styling-dots{
