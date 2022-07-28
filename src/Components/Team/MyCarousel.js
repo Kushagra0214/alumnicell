@@ -98,12 +98,14 @@ const MyCarousel = ({members}) => {
             // Data change
             setVisible(updatedVisible);
             // Remove animation
-            // document.querySelector('.l-stand').classList.remove('trans');
-            // document.querySelector('.first').classList.remove('trans');
-            // document.querySelector('.second').classList.remove('trans');
-            // document.querySelector('.third').classList.remove('trans');
-            // document.querySelector('.fourth').classList.remove('trans');
-            // document.querySelector('.fifth').classList.remove('trans');
+            document.querySelector('.le').classList.remove('trans');
+            document.querySelector('.l-stand').classList.remove('trans');
+            document.querySelector('.first').classList.remove('trans');
+            document.querySelector('.second').classList.remove('trans');
+            document.querySelector('.third').classList.remove('trans');
+            document.querySelector('.fourth').classList.remove('trans');
+            document.querySelector('.fifth').classList.remove('trans');
+            document.querySelector('.trans').classList.remove('trans');
             // Bring back all divs to position (To maintain continuity - Done in jiffy so appears that only data changed)
             document.querySelector('.fifth').classList.add('r-stand');
             document.querySelector('.fifth').classList.remove('fifth');
@@ -116,7 +118,14 @@ const MyCarousel = ({members}) => {
             document.querySelector('.first').classList.add('second');
             document.querySelector('.first').classList.remove('first');
 
-            // document.querySelector('.l-stand').classList.add('first');
+            document.querySelector('.l-stand').classList.add('first');
+            document.querySelector('.first').classList.remove('l-stand');
+            document.querySelector('.l-stand').classList.add('first');
+            document.querySelector('.l-stand').classList.remove('l-stand');
+            
+            document.querySelector('.le').classList.remove('first');
+            document.querySelector('.le').classList.add('l-stand');
+
             // document.querySelector('#left').classList.remove('first');
             // // console.log(document.querySelector('.first').classList);
             // // document.querySelector('.le').classList.add('l-stand');
@@ -135,7 +144,7 @@ const MyCarousel = ({members}) => {
             <li id='left' className='l-stand le'>
                 <Card id={visible[0].id === 0 ? maxId : visible[0].id-1} members={members} colr="#BFE3EB" />
             </li>
-                {console.log(visible[0].id)}
+                {/* {console.log(visible[0].id)} */}
             {visible.map( (i) => (
                 <li className={i.pos}>
                 <Card id={i.id} members={members} colr={i.layer} />

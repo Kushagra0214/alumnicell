@@ -123,9 +123,6 @@ export default function Team(){
         },
 
 
-        
-
-
         // Core team
         {
             name: 'Aumkar Lorekar',
