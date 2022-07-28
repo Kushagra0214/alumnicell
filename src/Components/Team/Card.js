@@ -7,7 +7,7 @@ const Card = ({ id, members, colr }) => {
           <div className='card-box' style={{ backgroundColor:colr}}>
             <div className='rounded-circle' ><img className='photo' src={members[id].imgsrc}></img></div>
             <div className='nam'>{members[id].name}</div>
-            <div className='desc-label'>DESCRIPTION</div>
+            <div className='desc-label'>{members[id].desg}</div>
             
             <div className='desc'> 
             <div className='top-brace'>❝</div> 
