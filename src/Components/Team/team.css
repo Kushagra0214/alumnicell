@@ -52,9 +52,12 @@
     width: 10rem;
     border-radius: 50%;
     margin: 0 auto 0 auto;
-    background-size:auto;
-    background-repeat: no-repeat;
-    overflow: hidden;
+}
+.photo{
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    border-radius: 50%;
 }
 .nam{
     font-weight: bold;
@@ -139,7 +142,7 @@ ul > li{
     transition: all 0.5s linear;
 }
 .l-stand{
-    opacity: 0.5;
+    opacity: 0;
     left: -48rem;
     transform: scale(0.6);
     z-index: 0;
@@ -184,4 +187,93 @@ ul > li{
     z-index: 1;
 }
 
+
 /* Carousel styling  ends >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and (max-width: 1137px) {
+    .first{
+        opacity: 0;
+    }
+    .fifth{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 747px) {
+    .second{
+        opacity: 0;
+    }
+    .fourth{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .team-heading{
+        font-size: 35px;
+    }
+
+    .team-subheading{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+
+    .team-heading{
+        font-size: 30px;
+    }
+
+    .team-subheading{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .team{
+        height: 30rem;
+    }
+
+    .team-styling-dots{
+        top: 80%;
+        right: 37%;
+    }
+
+    .team-styling-dots .team-single-dot{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .team-styling-dots .team-single-dot{
+        height: 16px;
+        width: 16px;
+    }
+    .team-styling-dots{
+        right: 33%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .team-heading{
+        font-size: 27px;
+    }
+
+    .team-styling-dots{
+        right: 30%;
+    }
+
+    .team-subheading{
+        font-size: 18px;
+    }
+
+
+    .team-styling-dots .team-single-dot{
+        height: 13px;
+        width: 13px;
+    }
+}
