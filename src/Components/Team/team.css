@@ -6,6 +6,8 @@
     color: #333333;
     background-color: #ecfaff;
 }
+.team::before { content: ""; display: block; height: 200px; /* fixed header height*/ margin: -100px 0 0; /* negative fixed header height */}
+
 .team-heading{
     color: #008eb0;
     font-size: 40px;
@@ -245,6 +247,8 @@ ul > li{
     .team-styling-dots .team-single-dot{
         height: 20px;
         width: 20px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 

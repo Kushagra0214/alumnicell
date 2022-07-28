@@ -7,6 +7,8 @@
     background-color: #ecfaff;
 }
 
+.events::before { content: ""; display: block; height: 200px; /* fixed header height*/ margin: -100px 0 0; /* negative fixed header height */}
+
 .events-heading{
     color: #008eb0;
     font-size: 40px;

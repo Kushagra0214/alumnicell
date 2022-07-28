@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import {React, useEffect, useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 import Card from "./Card";
@@ -135,9 +135,9 @@ const MyCarousel = ({members}) => {
     }
   return (
     <div className="slide hi-slide">
-        <div className="hi-prev" onClick={decId}>
+        <div className="hi-prev" onClick={incId}>
         <FontAwesomeIcon className="font-awesome" color="#008eb0" icon={faChevronLeft} size="xl"/></div>
-        <div className="hi-next" onClick={incId}>
+        <div className="hi-next" onClick={decId}>
         <FontAwesomeIcon className="font-awesome" color="#008eb0" icon={faChevronRight} size="xl"/></div>
         <ul>
             {/* Hidden card */}

@@ -59,7 +59,7 @@ export default function Team(){
         // Design Team
         { 
             name: 'Akansha Madavi',
-            desg:"Design Team Lead",
+            desg:"Design Team Member",
             description: ["akansha.madavi.21031@iitgoa.ac.in", <br />,  "+91 70839 10799"],
             imgsrc: 'img/team/Akansha.jpeg',
         },
@@ -85,13 +85,13 @@ export default function Team(){
         { 
             name: 'Nitin Kumar Yadav',
             desg:"Social Media Team Lead",
-            description: ["mulayam.21031@iitgoa.ac.in", <br />,  "+91 98175 68174"],
-            imgsrc: 'img/team/Nitin.jpeg',
+            description: ["nitin.yadav.21042@iitgoa.ac.in", <br />,  "+91 98175 68174"],
+            imgsrc: 'img/team/Nitin.jpg',
         },
         { 
             name: 'Mulayam',
             desg:"Social Media Team Member",
-            description: ["Post: Alumni Cell Member", <br />,  "nitin.yadav.21042@iitgoa.ac.in", <br />,  "+91 63506 00194"],
+            description: ["mulayam.21031@iitgoa.ac.in", <br />,  "+91 63506 00194"],
             imgsrc: 'img/team/Mulayam.jpg',
         },
         // DBMS Team
