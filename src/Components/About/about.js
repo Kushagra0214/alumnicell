@@ -5,7 +5,7 @@ export default function About(){
     return (
         <div className="about" id="about">
             <h1 className="about-heading">ABOUT</h1>
-            <h3 className="about-subheading">Subtitle</h3>
+            <h3 className="about-subheading">Alumni Cell</h3>
             <p className="about-para about-para-1">
                 IIT Goa was established in 2016 and since then has been producing brilliant minds. 
                 Founded in June’22, Alumni Cell, IIT Goa, works with the goal of connecting our institute’s 

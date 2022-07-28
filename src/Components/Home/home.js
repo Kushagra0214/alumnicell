@@ -14,11 +14,21 @@ export default function Home(){
             <div className="mask">
                 
             </div>
-            <form className="login-form">
-                <label for='email'><strong>EMAIL ID </strong></label>
-                <input type="email" name="email" disabled/><br />
-                <label for='password'><strong>PASSWORD</strong></label>
-                <input type="password" name="password" disabled/><br/>
+            <form className="login-form" >
+                <div onClick={(e) => {
+                    e.preventDefault();
+                    clickHandler();
+                }}>
+                    <label for='email'><strong>EMAIL ID </strong></label>
+                    <input type="email" name="email" disabled/><br />
+                </div>
+                <div onClick={(e) => {
+                    e.preventDefault();
+                    clickHandler();
+                }}>
+                    <label for='password'><strong>PASSWORD</strong></label>
+                    <input type="password" name="password" disabled/><br/>
+                </div>
                 <button className="login-button" onClick={(e) => {
                     e.preventDefault();
                     clickHandler();
