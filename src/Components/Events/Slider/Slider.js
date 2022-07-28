@@ -15,41 +15,10 @@ const event_post = [
   {
     id: 1,
     image: "/img/event/IIT_GOA_BG.png",
-    title: "Two lines for the Event",
-    date: "00 Month 20XX",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
-  },
-  {
-    id: 2,
-    image: "/img/event/img2.jpg",
-    title: "Two lines for the Event",
-    date: "00 Month 20XX",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
-  },
-  {
-    id: 3,
-    image: "/img/event/img1.jpg",
-    title: "Two lines for the Event",
-    date: "00 Month 20XX",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
-
-  },
-  {
-    id: 4,
-    image: "/img/event/img2.jpg",
-    title: "Two lines for the Event",
-    date: "00 Month 20XX",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
-
-  },
-  {
-    id: 5,
-    image: "/img/event/img1.jpg",
-    title: "Two lines for the Event",
-    date: "00 Month 20XX",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
-
-  },
+    title: "IIT Goa holds its 3rd Convocation",
+    date: "30 July 2022",
+    description: "Since its inception in 2016, IIT Goa has consistently worked towards achieving excellence with its students playing a vital role in achieving the goal. And as we all celebrate this progress, the much anticipated Third Convocation is here! Convocation is one of the most important events in not only a student’s life but also in the lives of people who’ve connected with them throughout their university years. It also doubles as a reunion! Students come together one final time to exchange memories and hugs, give valuable advice to their juniors, and take blessings from their teachers and the staff members who’ve watched them grow into the people they are today. <br><br> With the same in mind, we hope that the Batch of 2022 gives us a chance to bid them adieu at <strong>Rajiv Gandhi Kala Mandir</strong>, Ponda as they step forward into their futures. We’ll be looking forward to seeing you all, dressed in pure white, adorning smiles brighter than the color itself on <strong>July 30, ‘22</strong> at <strong>11 a.m.</strong>"
+  }
 ]
 
 export default function Slider() {

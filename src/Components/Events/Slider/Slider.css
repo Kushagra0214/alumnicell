@@ -26,7 +26,7 @@
 
 .swiper-slide {
   text-align: center;
-  background: #fff;
+  background: #000;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -94,12 +94,14 @@
   margin: 10px;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1250px) {
   .swiper-slide .text span{
-      font-size: 60px;
+    padding: 20px;
+    font-size: 60px;
   }
   .swiper-slide .text p{
-    font-size: 45px;
+    font-size: 40px;
+    padding: 20px; 
   }
 }
 
@@ -122,7 +124,7 @@
     height: 280px; 
   }
   .swiper-slide .text span{
-    font-size: 50px;
+    font-size: 48px;
 }
 .swiper-slide .text p{
   font-size: 35px;
@@ -135,7 +137,7 @@
     height: 225px; 
   }
   .swiper-slide .text span{
-    font-size: 45px;
+    font-size: 40px;
   }
   .swiper-slide .text p{
     font-size: 30px;
@@ -150,27 +152,14 @@
   }
 
   .swiper-slide .text span{
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    padding-left: 10px;
     top:6px;
-    font-size: 35px;
-}
-.swiper-slide .text p{
-  font-size: 25px;
-}
-  
-}
-
-@media screen and (max-width: 360px) {
-  .slider-component{
-    height: 145px; 
-  }
-
-  .swiper-slide .text span{
     font-size: 30px;
 }
-
 .swiper-slide .text p{
-  font-size: 20px;
+  font-size: 22px;
+  padding-left: 10px;
   bottom:-30px;
 }
   
@@ -178,15 +167,45 @@
 
 @media screen and (max-width: 360px) {
   .slider-component{
+    height: 150px; 
+  }
+
+  .swiper-slide .text span{
+    padding: 10px;
+    font-size: 27px;
+}
+
+.swiper-slide .text p{
+  padding-left: 10px;
+  font-size: 20px;
+  bottom:-30px;
+}
+  
+}
+
+@media screen and (max-width: 330px) {
+  .slider-component{
     height: 145px; 
   }
 
   .swiper-slide .text span{
-    font-size: 25px;
+    /* padding-top: 10px; */
+    /* top:6px; */
+    font-size: 22px;
 }
 
 .swiper-slide .text p{
   font-size: 20px;
   bottom:-20px;
+}  
+}
+
+@media screen and (max-width: 235px) {
+  .swiper-slide .text span{
+    font-size: 20px;
+}
+  .swiper-slide .text p{
+  font-size: 15px;
+  bottom:-10px;
 }  
 }
