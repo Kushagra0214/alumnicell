@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/alumnicell/static/css/main.98e0feaa.css",
-    "main.js": "/alumnicell/static/js/main.d26dfdd5.js",
+    "main.css": "/alumnicell/static/css/main.492a822c.css",
+    "main.js": "/alumnicell/static/js/main.b227071b.js",
     "static/js/787.3685b06b.chunk.js": "/alumnicell/static/js/787.3685b06b.chunk.js",
     "static/media/IIT_GOA_BG.png": "/alumnicell/static/media/IIT_GOA_BG.49305e23cc38311cd00b.png",
     "index.html": "/alumnicell/index.html",
-    "main.98e0feaa.css.map": "/alumnicell/static/css/main.98e0feaa.css.map",
-    "main.d26dfdd5.js.map": "/alumnicell/static/js/main.d26dfdd5.js.map",
+    "main.492a822c.css.map": "/alumnicell/static/css/main.492a822c.css.map",
+    "main.b227071b.js.map": "/alumnicell/static/js/main.b227071b.js.map",
     "787.3685b06b.chunk.js.map": "/alumnicell/static/js/787.3685b06b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98e0feaa.css",
-    "static/js/main.d26dfdd5.js"
+    "static/css/main.492a822c.css",
+    "static/js/main.b227071b.js"
   ]
 }
