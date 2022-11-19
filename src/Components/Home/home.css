@@ -91,6 +91,7 @@
     right: 10%;
     width:20px;
     height: auto;
+    cursor: pointer;
 }
 
 .coming-soon-active.coming-soon h1{
